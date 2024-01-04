@@ -1,0 +1,14 @@
+---
+    import { Image } from "astro:assets";
+    const { imgSrc, title, body } = Astro.props
+---
+
+<article class="w-[320px] rounded-[20px] bg-white px-4 py-4 shadow-card">
+    <div class="mb-6 w-[288px] h-[288px]">  
+        <Image src={imgSrc} alt="QR Code" class="w-full h-full object-cover rounded-[10px]"/>
+    </div>
+    <div class="px-4 pb-6">
+        <h2 class="text-center text-[#1F314F] text-[1.375rem] font-bold mb-4">{title}</h2>
+        <p class="text-center text-[#7D889E] text-[.938rem] font-normal tracking-[0.188px]">{body}</p>
+    </div>
+</article>

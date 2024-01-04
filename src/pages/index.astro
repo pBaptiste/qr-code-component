@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import QRCard from '../components/QRCard.astro';
+import qrCode from '../images/image-qr-code.png'
+
+const cardInfo = 
+	{	
+		qrCode: qrCode,
+		title: 'Improve your front-end skills by building projects',
+		body: 'Scan the QR code to visit Frontend Mentor and take your coding skills to the next level'
+	}
+
+---
+
+<Layout title="QR Code Component">
+	<main class="min-h-screen flex items-center justify-center">
+		<QRCard imgSrc={cardInfo.qrCode} title={cardInfo.title} body={cardInfo.body}/>
+	</main>
+</Layout>
+
